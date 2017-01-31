@@ -1,0 +1,50 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;	
+}
+
+.loader-css {
+	display: block;	
+}
+
+.loader-css .bar {
+	display: inline-flex;
+	width: 0;
+	height: 20px;
+	border: 3px solid black;
+
+	animation: loader-scale 1s infinite linear;
+}
+
+.loader-css .bar1 {
+	animation-delay: 0.15s;
+}
+
+.loader-css .bar2 {
+	animation-delay: 0.35s;
+}
+
+.loader-css .bar3 {
+	animation-delay: 0.55s;
+}
+
+.loader-css .bar4 {
+	animation-delay: 0.75s;
+}
+
+@keyframes loader-scale {
+	0% {
+		transform: scale(1);
+	}
+	20% {
+		transform: scale(1.4);
+	}
+	40% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
